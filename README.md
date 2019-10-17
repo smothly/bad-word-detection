@@ -3,10 +3,11 @@
 
 # Outline
 - 욕설 키워드 기반 크롤링(네이버 뉴스, 카페, 블로그, 디씨인사이드, 네이트 뉴스)
-- 회의나 공식석상에서 나올법한 단어 위주로 학습(약 18000개 라벨링)
+- STT변환을 통해 나올 수 있는 단어(완전한 글자) 위주로 학습(약 18000개 라벨링)
 - 자모분리를 통한 fasttext word embedding vocab구성
-- accuracy: 약 85퍼, f1-score: 약85퍼
-- 데이터가 커서 올라가지 않음
+- RandomForest: accuracy: 약 86퍼, f1-score: 약85퍼
+- 1DCNN: accuracy: 약 86퍼, f1-score: 약89퍼
+- 학습 데이터가 커서 올라가지 않음
 
 ---
 
