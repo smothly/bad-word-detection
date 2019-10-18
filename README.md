@@ -3,7 +3,7 @@
 
 # Outline
 - 욕설 키워드 기반 크롤링(네이버 뉴스, 카페, 블로그, 디씨인사이드, 네이트 뉴스)
-- STT변환을 통해 나올 수 있는 단어(완전한 글자) 위주로 학습(약 18000개 라벨링)
+- STT변환을 통해 나올 수 있는 단어(완전한 글자) 위주로 학습(약 14000개 라벨링)
 - 자모분리를 통한 fasttext word embedding vocab구성
 - RandomForest: accuracy: 약 86퍼, f1-score: 약85퍼
 - 1DCNN: accuracy: 약 86퍼, f1-score: 약89퍼
@@ -16,8 +16,8 @@
 - 추출된 어절 중심으로 좌우 단어 trigram 반환 ex) (나는, 바보, 멍청이, 3) 3번째위치에 바보가 있고 좌우어절은 나는, 멍청이 이다
 - trigram을 fasttext embedding model을 활용하여 vectorize
 - vectorize된 데이터를 Random Forest or 1DCNN Model에 넣어 예측
-
+- EDA -> FastTextVocab -> TrigramVectorize -> 1DCNN or RandomForest -> Test
 ---
 
 # Test
--
+- Test.ipynb 실행
